@@ -11,12 +11,12 @@ const getConfig = function() {
 };
 
 /**
- * Add vendor prefixes and minify CSS.
+ * load plugins and transform using Postcss
  * @public
- * @param {?String} folderPath - Path to the folder containing the SASS file.
+ * @param {?String} folderPath - Path to the folder containing the css file.
  * @param {?String} str - CSS.
  * @param {?Object} opts - Optional options for the task.
- * @returns {Promise<String>} Vendor prefixed and minified CSS.
+ * @returns {Promise<String>} The transformed file content.
  */
 module.exports = async function(folderPath, str, opts) {
 	if (str == null || str === '') return '';

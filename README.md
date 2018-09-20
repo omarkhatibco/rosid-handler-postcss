@@ -1,6 +1,6 @@
-# rosid-handler-sass
+# rosid-handler-postcss
 
-A function that loads a SASS file, transforms it to CSS, adds vendor prefixes and minifies the output.
+Load css and transform it using postcss
 
 ## Install
 
@@ -15,13 +15,13 @@ npm install rosid-handler-postcss
 ```js
 const handler = require('rosid-handler-postcss');
 
-handler('main.cass').then(data => {});
+handler('main.css').then(data => {});
 handler('main.css', { optimize: true }).then(data => {});
 ```
 
 ### Postcss
 
-install your postcss plugins and add it to `postcss.config.js`
+install your Postcss plugins and add it to `postcss.config.js`
 
 ```js
 module.exports = {
@@ -33,7 +33,7 @@ module.exports = {
 
 ### Rosid
 
-Add the following object to your `rosidfile.json`, `rosidfile.js` or [routes array](https://github.com/electerious/Rosid/blob/master/docs/Routes.md). `rosid-handler-postcss` will transform all matching SASS files in your source folder to CSS.
+Add the following object to your `rosidfile.json`, `rosidfile.js` or [routes array](https://github.com/electerious/Rosid/blob/master/docs/Routes.md). `rosid-handler-postcss` will transform all matching css files in your source folder using Postcss.
 
 ```json
 {
@@ -44,7 +44,7 @@ Add the following object to your `rosidfile.json`, `rosidfile.js` or [routes arr
 ```
 
 ```css
-/* main.sass */
+/* main.css */
 .class {
 	color: white;
 	+ .class 2 {
