@@ -1,0 +1,30 @@
+{
+	"name": "rosid-handler-postcss",
+	"version": "1.0.0",
+	"authors": [
+		"Omar Khatib <omar@omarkhatib.co>"
+	],
+	"description": "Load css and transform it using postcss",
+	"main": "src/index.js",
+	"keywords": [
+		"rosid",
+		"handler",
+		"transform",
+		"compile",
+		"postcss"
+	],
+	"license": "MIT",
+	"homepage": "https://github.com/omarkhatibco/rosid-handler-postcss",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/omarkhatibco/rosid-handler-postcss.git"
+	},
+	"files": [
+		"src"
+	],
+	"dependencies": {
+		"find-up": "^3.0.0",
+		"postcss": "^7.0.2",
+		"postcss-load-config": "^2.0.0"
+	}
+}
