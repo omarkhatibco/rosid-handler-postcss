@@ -23,9 +23,12 @@
 	"files": [
 		"src"
 	],
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com/@omarkhatibco"
+	},
 	"dependencies": {
-		"find-up": "^3.0.0",
-		"postcss": "^7.0.2",
-		"postcss-load-config": "^2.0.0"
+		"find-up": "^4.1.0",
+		"postcss": "^7.0.18",
+		"postcss-load-config": "^2.1.0"
 	}
 }
